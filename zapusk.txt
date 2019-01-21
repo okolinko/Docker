@@ -1,0 +1,29 @@
+********************************************************************************
+
+                                                          :::      ::::::::
+     zapusk.txt                                         :+:      :+:    :+:
+                                                      +:+ +:+         +:+
+     By: akolinko <akolinko@student.unit.ua>        +#+  +:+       +#+
+                                                  +#+#+#+#+#+   +#+
+     Created: 2018/11/22 11:54:37 by akolinko          #+#    #+#
+     Updated: 2018/11/22 11:54:43 by akolinko         ###   ########.fr
+
+********************************************************************************
+
+Установить двоичный файл докера
+
+brew install docker
+
+Установить двоичный файл док-машины
+
+brew install docker-machine
+
+
+ ln -s Library/com.docker.docker
+
+ Удалить докер машину
+ docker-machine rm Char -y  (Char - название)
+
+ Запуск докер машины(создание)
+
+ docker-machine create --driver virtualbox Char

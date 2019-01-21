@@ -1,0 +1,18 @@
+# ************************************************************************** #
+#                                                                            #
+#                                                        :::      ::::::::   #
+#   12                                                 :+:      :+:    :+:   #
+#                                                    +:+ +:+         +:+     #
+#   By: akolinko <akolinko@student.unit.ua>        +#+  +:+       +#+        #
+#                                                +#+#+#+#+#+   +#+           #
+#   Created: 2018/11/22 12:05:50 by akolinko          #+#    #+#             #
+#   Updated: 2018/11/22 12:05:52 by akolinko         ###   ########.fr       #
+#                                                                            #
+# ************************************************************************** #
+
+docker run --detach --restart=on-failure --mount source=hatchery,target=/var/lib/mysql --env MYSQL_ROOT_PASSWORD=Kerrigan --env MYSQL_DATABASE=zerglings --name spawning-pool mysql:latest
+
+#Запуск контейнера mysql в качестве фоновой задачи
+# --month  синтаксис разделяет все параметры в одном поле
+# --detach проверяет не перехвачены ли ключи
+# --env устанавливает простые переменные (не-массив)

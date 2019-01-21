@@ -1,0 +1,15 @@
+# ************************************************************************** #
+#                                                                            #
+#                                                        :::      ::::::::   #
+#   28                                                 :+:      :+:    :+:   #
+#                                                    +:+ +:+         +:+     #
+#   By: akolinko <akolinko@student.unit.ua>        +#+  +:+       +#+        #
+#                                                +#+#+#+#+#+   +#+           #
+#   Created: 2018/11/22 12:05:50 by akolinko          #+#    #+#             #
+#   Updated: 2018/11/22 12:05:52 by akolinko         ###   ########.fr       #
+#                                                                            #
+# ************************************************************************** #
+
+docker service create --name marines --replicas 2 --network overmind --env OC_USERNAME=amarquez --env OC_PASSWD=poesliate 42school/marine-squad
+
+# создание двох  групп marines, чтобы устранить злоумышленников

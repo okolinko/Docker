@@ -1,0 +1,16 @@
+# ************************************************************************** #
+#                                                                            #
+#                                                        :::      ::::::::   #
+#   24                                                 :+:      :+:    :+:   #
+#                                                    +:+ +:+         +:+     #
+#   By: akolinko <akolinko@student.unit.ua>        +#+  +:+       +#+        #
+#                                                +#+#+#+#+#+   +#+           #
+#   Created: 2018/11/22 12:05:50 by akolinko          #+#    #+#             #
+#   Updated: 2018/11/22 12:05:52 by akolinko         ###   ########.fr       #
+#                                                                            #
+# ************************************************************************** #
+
+docker service create --name orbital-command --network overmind --env RABBITMQ_DEFAULT_USER=amarquez --env RABBITMQ_DEFAULT_PASS=poesliate rabbitmq
+
+# Запустите службу rabbitmq SERVICE, которая будет называться orbital-command
+# --network флаг, чтобы указать, к каким сетям должен подключиться ваш контейнер
